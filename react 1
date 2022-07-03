@@ -1,0 +1,48 @@
+//object -> group of key : value pair
+//key : value -> property
+//key : function -> method
+let cap = {
+    name: "Abhilasha",
+    lastName: "kumari",
+    address: {
+        city: "Muzaffarpur",
+        state: "Bihar"
+    }, age : 35,
+    isAvenger : true,
+    movies: ["First Avenger","winter soldier","civil war"],
+    sayHi: function () {
+        console.log("Cap says high");
+    }
+};
+/*console.log(cap.name);
+console.log(cap.age);
+console.log(cap.movies[1]);
+cap.sayHi();
+//SET/UPDATE
+cap.age = 36;
+cap.isAvenger = false;
+cap.friends=["Tony","Bruce","Peter"];
+console.log("cap :",cap);*/
+for(let x in cap) {
+    console.log(x," : ",cap[x]);
+}
+let propkey = "age";
+console.log(cap[propkey]);
+cap.address.city = "muzaffarpur" ;
+for(let y in cap) {
+    console.log(y," : ",cap[y]);
+} 
+//let hat = {...cap.name};
+cap.name = "abhilasha";
+
+//let hat = {...cap,address:{...cap.address}};
+let hat = JSON.parse(JSON.stringify(cap));
+//cap.address.city = "rudauli";
+for(let z in cap) {
+    console.log(z," : ",cap[z]);
+}
+for(let z in hat) {
+    console.log(z," : ",hat[z]);
+}
+
+//hat.address.state = "U.P";
