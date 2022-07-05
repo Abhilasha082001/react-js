@@ -1,0 +1,36 @@
+//__________________________________MAP__________________________________\\
+
+//-----------------------------------example 1-------------------------------------\\
+
+let arr = [1,2,3,4,5]
+let narr = [];
+
+narr = arr.map((value,idx)=>{
+    console.log(value,idx);
+    return value*2;
+})
+
+console.log(arr);
+console.log(narr);
+
+//-----------------------------------example 2----------------------------------------\\
+
+const users = [
+    {name: 'Abhilasha' , age: 20},
+    {name: 'momma' , age: 40},
+    {name: 'papa' , age: 45}
+];
+
+const names = users.map(/*user => user.name*/user => user.age);
+console.log(names);
+
+//------------------------------------example 3----------------------------------------\\
+
+const nescafe = [
+    {item : 'maggi' , price : 50 },
+    {item : 'coffee' , price : 40 },
+    {item : 'green tea' , price : 120}
+];
+
+const items = nescafe.map(menu=>menu.item);
+console.log(items);
