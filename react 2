@@ -1,0 +1,26 @@
+//let arr = ["Hi","I","am","Abhilasha"];
+
+//let a = arr[0];
+//let b = arr[1];
+
+//let [a,b,c,d] = arr
+//Destructing
+
+//let [a,b,,d] = arr;
+
+//let [a,b,c,d,extra='Hlo'] = arr
+//console.log(a,b,d,extra);
+
+let obj = {
+    name : "Abhilasha",
+    state : "Bihar",
+    country : "India"
+}
+
+//let { name,state,country} = obj;
+//let { name,state,country,extra="pagal"} = obj;
+
+let {name:firstname,state,country,extra="pagal"} = obj
+//console.log(name,state,country,extra);
+
+console.log(firstname,state,country,extra);
